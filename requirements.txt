@@ -1,3 +1,3 @@
 tensorflow-text==2.10
-tensorflow==2.11.0
+tensorflow
 streamlit==1.18.0
