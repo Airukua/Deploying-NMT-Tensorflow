@@ -7,7 +7,7 @@ st.title("Demo NMT Indonesia|Geser")
 
 @st.cache_resource
 def load_model(): 
-    loaded = tf.saved_model.load('/content/model_ig1', options=tf.saved_model.LoadOptions(experimental_io_device='/job:localhost'))
+    loaded = tf.saved_model.load('model', options=tf.saved_model.LoadOptions(experimental_io_device='/job:localhost'))
     translate_func = loaded.signatures['serving_default']
     return loaded
 
